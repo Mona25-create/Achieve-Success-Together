@@ -134,3 +134,10 @@ app.delete('/notices/:id', async (req, resp) => {
     resp.send("deleted!");
 })
 app.listen(3000,() => console.log("listening 3000..."));
+
+
+
+//some points to remeber for deploying
+//1. github -  git init> git add . > git commit -am "<commit name>" > sigin to github > create repository > follow all steps given in github> commit new file in github > upside code link is produced automatically
+//2. mongo atlas - to transfer database from local to cloud -  mongod (in cli) > open mongo compass > select a collevtion(users,emails..) up collection then export collecton then export full collection it ------- now import this into clusture(atlas) login there> connect > add ip address > create monodb user > create pass > connect your application> copy code generated > paste in app.js mongoose.connect() and replace some info init username, pass, database(travels)> collection > crerate db and collecton >now import data> from command line tools follw inst for importing... and make some changes accordingly(username,db name, passw) if a collection is empty we can connect manualy> now any changes in website like adding post will make changes in clusture too
+//3. heroku - to transer all relevant files and folders to cloud --> register on heroku if not and install now follow instructions heroku login.. > click i have insatalled h cli > click i have my own cloned app > now folow ins for deploying> heroku logs --tail to identify error if any> make a procfile > and change address whereever localhost.. is written we replace it by / assign a variable = process.env.PORT || 3000  toget port> in mongodb atlas > network access > add ipdadress accesible to everyone
