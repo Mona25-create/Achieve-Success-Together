@@ -133,7 +133,8 @@ app.delete('/notices/:id', async (req, resp) => {
     await Note.deleteOne({id: id});
     resp.send("deleted!");
 })
-app.listen(3000,() => console.log("listening 3000..."));
+let port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`listening ${port}...`));
 
 
 
