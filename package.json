@@ -1,0 +1,17 @@
+{
+  "name": "innovation_and_u",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.12.13",
+    "multer": "^1.4.2",
+    "uniqid": "^5.3.0"
+  }
+}
